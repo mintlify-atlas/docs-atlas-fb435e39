@@ -1,122 +1,113 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "EduMate",
+  "theme": "palm",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2563eb",
+    "light": "#60a5fa",
+    "dark": "#1e40af"
   },
-  "favicon": "/favicon.svg",
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/suyash-sketch/edu-mate"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/suyash-sketch/edu-mate"
+    }
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Get Started",
             "pages": [
-              "index",
+              "introduction",
               "quickstart",
-              "development"
+              "installation"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Core Features",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "features/document-processing",
+              "features/assessment-generation",
+              "features/blooms-taxonomy",
+              "features/rag-system"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "User Guide",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "guide/authentication",
+              "guide/uploading-documents",
+              "guide/generating-assessments",
+              "guide/viewing-history",
+              "guide/exporting-assessments"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Deployment",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Infrastructure",
             "pages": [
-              "api-reference/introduction"
+              "deployment/overview",
+              "deployment/database-setup",
+              "deployment/vector-db",
+              "deployment/ollama-setup",
+              "deployment/backend",
+              "deployment/frontend"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Configuration",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "deployment/environment-variables",
+              "deployment/models",
+              "deployment/redis-queue"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/auth/signup",
+              "api/auth/login",
+              "api/auth/me",
+              "api/auth/forgot-password",
+              "api/auth/reset-password"
+            ]
+          },
+          {
+            "group": "Document Processing",
+            "pages": [
+              "api/documents/chunking",
+              "api/documents/status"
+            ]
+          },
+          {
+            "group": "Assessments",
+            "pages": [
+              "api/assessments/generate",
+              "api/assessments/job-status",
+              "api/assessments/save",
+              "api/assessments/history",
+              "api/assessments/get"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    ]
   }
 }
